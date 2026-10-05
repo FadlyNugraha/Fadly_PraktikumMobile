@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Kolom input -->
+    <style name="GoldInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/gold</item>
+        <item name="hintTextColor">@color/gold</item>
+        <item name="android:textColorHint">@color/text_soft</item>
+        <item name="startIconTint">@color/gold</item>
+        <item name="endIconTint">@color/gold</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <style name="GoldInputDropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/gold</item>
+        <item name="hintTextColor">@color/gold</item>
+        <item name="android:textColorHint">@color/text_soft</item>
+        <item name="startIconTint">@color/gold</item>
+        <item name="endIconTint">@color/gold</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <style name="GoldEditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Tombol emas -->
+    <style name="GoldButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/gold</item>
+        <item name="android:textColor">@color/black_bg</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <!-- Tombol garis emas -->
+    <style name="GoldButtonOutline" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/gold</item>
+        <item name="android:textColor">@color/gold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <!-- Teks -->
+    <style name="GoldLabel">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="GoldValue">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="ThemeOverlay.GoldToolbar" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="colorControlNormal">@color/gold</item>
+    </style>
+
+</resources>

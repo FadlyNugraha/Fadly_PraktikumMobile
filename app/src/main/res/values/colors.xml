@@ -8,4 +8,10 @@
     <color name="grey_text">#757575</color>
     <color name="orange_btn">#E65100</color>
     <color name="teal_btn">#00796B</color>
+    <color name="gold">#D4AF37</color>
+    <color name="gold_light">#F1D27A</color>
+    <color name="black_bg">#0D0D0D</color>
+    <color name="black_card">#1A1A1A</color>
+    <color name="text_soft">#B8B8B8</color>
 </resources>
+

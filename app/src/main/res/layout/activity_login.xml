@@ -17,37 +17,41 @@
         android:padding="24dp">
 
         <ImageView
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
             android:background="@drawable/bg_circle"
             android:contentDescription="Logo"
             android:padding="24dp"
-            android:src="@drawable/ic_lock" />
+            android:src="@drawable/ic_lock"
+            app:tint="@color/gold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Selamat Datang"
-            android:textColor="@android:color/white"
-            android:textSize="28sp" />
+            android:letterSpacing="0.1"
+            android:text="SELAMAT DATANG"
+            android:textColor="@color/gold"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="28dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Silakan login untuk melanjutkan"
-            android:textColor="#E1BEE7"
-            android:textSize="14sp" />
+            android:textColor="@color/text_soft"
+            android:textSize="13sp" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="@android:color/white"
+            app:cardBackgroundColor="@color/black_card"
             app:cardCornerRadius="24dp"
-            app:cardElevation="8dp">
+            app:cardElevation="0dp"
+            app:strokeColor="@color/gold"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,108 +65,96 @@
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Login"
-                    android:textColor="@color/purple_dark"
-                    android:textSize="22sp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    style="@style/GoldInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Username"
-                    app:boxStrokeColor="@color/purple_main"
-                    app:startIconDrawable="@drawable/ic_person"
-                    app:startIconTint="@color/purple_main">
+                    app:startIconDrawable="@drawable/ic_person">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etUsername"
+                        style="@style/GoldEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    style="@style/GoldInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:hint="Password"
-                    app:boxStrokeColor="@color/purple_main"
                     app:endIconMode="password_toggle"
-                    app:startIconDrawable="@drawable/ic_lock"
-                    app:startIconTint="@color/purple_main">
+                    app:startIconDrawable="@drawable/ic_lock">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etPassword"
+                        style="@style/GoldEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    style="@style/GoldInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:hint="Kelas"
-                    app:boxStrokeColor="@color/purple_main"
-                    app:startIconDrawable="@drawable/ic_school"
-                    app:startIconTint="@color/purple_main">
+                    app:startIconDrawable="@drawable/ic_school">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etKelas"
+                        style="@style/GoldEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    style="@style/GoldInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:hint="NIM"
-                    app:boxStrokeColor="@color/purple_main"
-                    app:startIconDrawable="@drawable/ic_badge"
-                    app:startIconTint="@color/purple_main">
+                    app:startIconDrawable="@drawable/ic_badge">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNim"
+                        style="@style/GoldEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
                         android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    style="@style/GoldInputDropdown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:hint="Program Studi"
-                    app:boxStrokeColor="@color/purple_main"
-                    app:startIconDrawable="@drawable/ic_school"
-                    app:startIconTint="@color/purple_main">
+                    app:startIconDrawable="@drawable/ic_school">
 
                     <com.google.android.material.textfield.MaterialAutoCompleteTextView
                         android:id="@+id/actProdi"
+                        style="@style/GoldEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
                         android:inputType="none" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnLogin"
+                    style="@style/GoldButton"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="24dp"
-                    android:backgroundTint="@color/purple_main"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="LOGIN"
-                    android:textColor="@android:color/white"
-                    app:cornerRadius="16dp" />
+                    android:text="LOGIN" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -171,7 +163,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:gravity="center"
                     android:text="Lupa password?"
-                    android:textColor="@color/grey_text"
+                    android:textColor="@color/gold_light"
                     android:textSize="13sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

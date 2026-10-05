@@ -1,5 +1,6 @@
 package com.example.fadly_3tib
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fadly_3tib.databinding.ActivityMainBinding
+import com.example.fadly_3tib.pertemuan_5.LimaActivity
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -29,16 +31,16 @@ class MainActivity : AppCompatActivity() {
         // Ambil data dari LoginActivity
         val user = intent.getStringExtra("username")
         val pass = intent.getStringExtra("password")
-        val umur = intent.getIntExtra("umur", 0)
+        val kelas = intent.getStringExtra("kelas")
         val nim = intent.getStringExtra("nim")
         val prodi = intent.getStringExtra("prodi")
 
-        Log.v("Hasil", "umur $umur, nim $nim, prodi $prodi")
+        Log.v("Hasil", "kelas $kelas, nim $nim, prodi $prodi")
 
         binding.txtSapaan.text = "Halo, $user!"
         binding.txtUsername.text = user
         binding.txtPassword.text = pass
-        binding.txtUmur.text = umur.toString()
+        binding.txtUmur.text = kelas
         binding.txtNim.text = nim
         binding.txtProdi.text = prodi
 
@@ -69,5 +71,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnKembali.setOnClickListener {
             finish()
         }
+
+        // Tombol ke Pertemuan 5
+        binding.btnToLima.setOnClickListener {
+            val intent = Intent(this@MainActivity, LimaActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
+
